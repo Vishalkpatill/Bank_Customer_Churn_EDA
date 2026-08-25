@@ -159,21 +159,6 @@ Some important patterns identified during the analysis include:
 - Card types show relatively modest differences in churn.
 - The relationship between complaints and churn is **extremely strong** in this dataset.
 
-### ⚠️ Important Data Quality Observation
-
-The complaint variable requires special attention.
-
-Almost every customer marked as having a complaint is classified as exited. This is unusually strong and should **not automatically be interpreted as causation**.
-
-Before using `Complain` in a predictive model, investigate whether:
-
-- The complaint was recorded after the customer exited.
-- The variable contains target leakage.
-- The variable was generated or encoded in a way that reflects churn.
-- There is another data-generation issue.
-
-This demonstrates an important analyst skill: **critically evaluating the data instead of blindly trusting a correlation.**
-
 ---
 
 ## 💼 Business Recommendations
